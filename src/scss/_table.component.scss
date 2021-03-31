@@ -1,0 +1,25 @@
+@use './variables' as var;
+
+.table {
+    background: var.$gray-100;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var.$gray-200;
+    border-left: 1px solid var.$gray-200;
+    border-right: 1px solid var.$gray-200;
+}
+
+.table__title {
+    text-align: center;
+}
+
+.table__cell {
+    padding: 1rem;
+    border-bottom: 1px solid var.$gray-200;
+}
+
+.table__cell-header {
+    background: var.$gray-300;
+    color: white;
+    font-weight: 700;
+}

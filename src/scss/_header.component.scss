@@ -1,0 +1,19 @@
+@use './variables' as var;
+.main-header {
+    background: var.$gray-100; // TODO: I might need to change this color to match spec even though I feel it is too dark
+    padding: 1rem;
+    display: grid;
+    text-align: center;
+    @media screen and (min-width: 720px) {
+        grid-template-columns: min-content auto min-content;
+        align-items: center;
+    }
+    .home-link {
+        display: block;
+        width: 148px;
+        margin: 0 auto;
+    }
+    a {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,11 @@
+.detail-page__content {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(6, min-content);
+    grid-gap: 1rem;
+}
+
+.detail-page__content-title {
+    font-weight: 700; 
+    white-space: nowrap;
+}

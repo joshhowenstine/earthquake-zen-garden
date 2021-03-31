@@ -1,0 +1,30 @@
+.profile-page {
+    display: grid;
+    grid-gap: 2rem;
+    @media screen and (min-width: 720px) {
+        grid-template-columns: 300px 1fr;
+    }
+}
+
+.profile-page__title {
+    text-align: center;
+}
+
+.profile-page__img {
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.profile-page__content {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(5, min-content);
+    grid-gap: 1rem;
+}
+
+.profile-page__content-title {
+    font-weight: 700; 
+    white-space: nowrap;
+}

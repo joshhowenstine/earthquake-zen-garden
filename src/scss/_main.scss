@@ -1,0 +1,17 @@
+@use './variables' as var;
+
+body {
+    background: var.$white;
+}
+
+.main-content {
+    padding: 2rem 1rem;
+    @media screen and (min-width: 720px) {
+        padding: 4rem 1rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 720px;
+}
